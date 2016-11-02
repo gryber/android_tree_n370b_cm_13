@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 
-VENDOR_BLOBS ?= vendor/doogee/n370b/porridge-vendor.mk
+VENDOR_BLOBS ?= vendor/doogee/n370b/n370b-vendor.mk
 $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
 MTK_PROJECT_CONFIG ?= device/doogee/n370b/ProjectConfig.mk
@@ -29,7 +29,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc \
-    $(LOCAL_PATH)/rootdir/fstab.porridge:root/fstab.porridge
+    $(LOCAL_PATH)/rootdir/fstab.n370b:root/fstab.n370b
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -97,4 +97,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.mediatek.chip_ver=$(MTK_CHIP_VER)
 
 # Inherit the rest from mt6735-common
-$(call inherit-product, device/cyanogen/mt6735-common/mt6735.mk)
+$(call inherit-product, device/cyanogen/mt6737-common/mt6737.mk)
