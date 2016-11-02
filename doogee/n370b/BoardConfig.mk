@@ -15,7 +15,7 @@
 
 TARGET_BOARD_PLATFORM := mt6737
 
-DEVICE_PATH := device/wileyfox/n370b
+DEVICE_PATH := device/doogee/n370b
 
 MTK_PROJECT_CONFIG ?= $(DEVICE_PATH)/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
